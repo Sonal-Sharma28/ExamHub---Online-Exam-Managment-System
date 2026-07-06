@@ -9,7 +9,7 @@ This is a **mini project** created as part of the **3rd semester** of college by
 - [Sonal Sharma's GitHub](https://github.com/Sonal-Sharma28)
 
 ## Features:
-- **User Registration & Login**: Users can register and log in to the system with their credentials.
+- **User Registration & Login**: Users can register and log in to the system with their credentials. The login process requires username, password, and roll number.
 - **Subject Selection**: Users can choose from the following subjects:
   - Java
   - Paradigm Computer Programming Fundamentals (PCPF) or Computer Paradigm Programming Lab (CPPL)
