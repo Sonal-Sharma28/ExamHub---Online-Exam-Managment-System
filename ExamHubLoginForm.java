@@ -169,13 +169,12 @@ public class ExamHubLoginForm {
 
         // Helper method to handle login logic and role-based redirection
         public static void handleLogin( JTextField usernameField, JPasswordField passwordField,  JTextField rollNumberField, JFrame frame) {
-            String username = usernameField.getText();
-            String password = new String(passwordField.getPassword());
-            String roll_number = rollNumberField.getText();
-
+            String username = usernameField.getText().trim();
+            String password = new String(passwordField.getPassword()).trim();
+            String roll_number = rollNumberField.getText().trim();
 
             // Basic validation
-            if (username.isEmpty() || password.isEmpty()) {
+            if (username.isEmpty() || password.isEmpty() || roll_number.isEmpty()) {
                 JOptionPane.showMessageDialog(frame, "Please fill out all required fields!", "Error", JOptionPane.ERROR_MESSAGE);
             } else {
                 // Validate user against the database
