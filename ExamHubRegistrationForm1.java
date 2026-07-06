@@ -139,11 +139,11 @@ public class ExamHubRegistrationForm1 {
         registerButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String name = nameField.getText();
-                String rollNumber = rollNumberField.getText();
-                String number = numberField.getText();
-                String username = usernameField.getText();
-                String password = new String(passwordField.getPassword());
+                String name = nameField.getText().trim();
+                String rollNumber = rollNumberField.getText().trim();
+                String number = numberField.getText().trim();
+                String username = usernameField.getText().trim();
+                String password = new String(passwordField.getPassword()).trim();
 
                 // Basic validation
                 if (name.isEmpty() || rollNumber.isEmpty() || number.isEmpty() ||
